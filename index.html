@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>snake</title>
+  <style>
+    canvas {
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 150px;
+      height: 32px;
+      border: 1px solid #ccc;
+      outline: none;
+      margin: 20px;
+      background-color: #e0e0e0;
+      color: #000;
+    }
+    button:active {
+      opacity: 0.8;
+    }
+    span {
+      display: inline-block;
+      margin: 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <button id="restart">Restart</button>
+  <button id="pause">Pause</button>
+  <span>speed: </span>
+  <input id="range" type="range" min="10" max="100" value="50" step="9" onChange="output.value=value">
+  <output id="output"></output>
+  <div id="app">
+    <div id="content"></div>
+  </div>
+  <script src="bundle.js"></script>
+</body>
+</html>
